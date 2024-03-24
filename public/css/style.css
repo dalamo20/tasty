@@ -1,0 +1,129 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14481C;
+    padding: 10px;
+  }
+  
+  .navbar-left a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-center {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .navbar-right a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFCF4;
+    padding: 20px;
+  }
+  
+  .left-side {
+    flex: 1;
+  }
+  
+  .right-side {
+    flex: 1;
+  }
+  
+  .pill-button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: forestgreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cooking-reels {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .cooking-videos {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .recipes {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .big-hero {
+    background-color: #253D29;
+    padding: 100px;
+  }
+  
+  footer {
+    background-color: #FFFCF4;
+    color: black;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+  }
+  
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .footer-row a {
+    margin-bottom: 10px;
+    /* color: #fff; */
+    text-decoration: none;
+  }
+  
+  .footer-right p {
+    margin-bottom: 5px;
+  }
+  
+  .footer-right a {
+    margin-right: 10px;
+    /* color: #fff; */
+    text-decoration: none;
+  }
+  

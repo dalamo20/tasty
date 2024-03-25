@@ -1,34 +1,58 @@
-/* Resetting default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Basic styles */
+ 
   body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
   }
   
+  /* NAVBAR */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #14481C;
     padding: 10px;
+    height: 90px;
   }
   
   .navbar-left a {
     margin-right: 10px;
-    color: #fff;
     text-decoration: none;
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 22px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 40px;
+    top: 0;
+    white-space: nowrap;
+    width: 113px;
   }
   
   .navbar-center {
     color: #fff;
     font-weight: bold;
+  }
+
+  .logo {
+    color: #ffffff;
+    font-family: "IvyMode-Bold", Helvetica;
+    font-size: 35px;
+    font-weight: 700;
+    height: 52px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    top: 0;
   }
   
   .navbar-right a {
@@ -36,6 +60,7 @@
     text-decoration: none;
   }
   
+  /* INTRO HERO */
   .hero {
     display: flex;
     justify-content: space-between;
@@ -47,7 +72,53 @@
   .left-side {
     flex: 1;
   }
+
+  #tagline {
+    color: #1b291e;
+    font-family: "GTF Riposte TRIAL-Regular", Helvetica;
+    font-size: 72px;
+    font-weight: 400;
+    height: 146px;
+    left: 0;
+    letter-spacing: -1.44px;
+    line-height: 72px;
+    top: 0;
+    width: 557px;
+  }
+
+  #about-intro {
+    color: #282828;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    top: 0;
+    width: 533px;
+  }
   
+  .aboutBtn {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+
+  #hero-img {
+    height: 632px;
+    left: 0;
+    object-fit: cover;
+    top: 0;
+    width: 644px;
+  }
+
   .right-side {
     flex: 1;
   }
@@ -80,7 +151,30 @@
     background-color: #253D29;
     padding: 100px;
   }
+  /* RECIPES */
+  .gallery {
+    background: #EEE;
+  }
   
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  /* FOOTER */
   footer {
     background-color: #FFFCF4;
     color: black;

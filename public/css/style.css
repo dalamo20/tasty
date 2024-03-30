@@ -20,6 +20,10 @@
     padding: 10px;
     height: 90px;
   }
+
+  .navbar-left {
+    padding-left: 40px;
+  }
   
   .navbar-left a {
     margin-right: 10px;
@@ -53,24 +57,41 @@
     line-height: normal;
     text-align: center;
     top: 0;
+    margin-right: 400px;
+  }
+
+  .navbar-right {
+    padding-right: 21px;
   }
   
   .navbar-right a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 22px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 40px;
+    top: 0;
+    white-space: nowrap;
+    width: 113px;
   }
   
   /* INTRO HERO */
   .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #FFFCF4;
-    padding: 20px;
+    /* align-items: center; */
+    background-color: #fffaee;
+    height: 812px;
+    /* padding: 20px; */
   }
   
   .left-side {
     flex: 1;
+    padding: 146px 0 0 100px;
   }
 
   #tagline {
@@ -96,6 +117,7 @@
     line-height: 26px;
     top: 0;
     width: 533px;
+    padding: 36px 0 26px 0;
   }
   
   .aboutBtn {
@@ -109,6 +131,7 @@
     position: relative;
     text-align: center;
     width: fit-content;
+    padding-top: 26px;
   }
 
   #hero-img {
@@ -121,6 +144,7 @@
 
   .right-side {
     flex: 1;
+    padding-top: 100px;
   }
   
   .pill-button {
@@ -179,7 +203,6 @@
     background-color: #FFFCF4;
     color: black;
     padding: 20px;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;

@@ -21,3 +21,12 @@ tasty! is not just another boring culinary website. tasty! is here to engage aud
 - **Personalization**: Create recipes or add personal notes and/or variations to suit your taste preferences and dietary restrictions.
 
 - **Become a Cooking Influencer**: Stay updated with top-rated recipes and culinary trends, adding an element of inspiration to your cooking journey.
+
+## Tech Stack
+
+- **Frontend**: HTML, CSS, JS
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL
+- **Security**: JWT (Json Web Tokens) & Bcrypt for authentication and password hashing/encryption
+- **Middleware**: cors, body-parser, morgan
+- **Dev Tools**: Postman

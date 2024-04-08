@@ -11,15 +11,16 @@
         <div class="alert-box">
             <p class="alert">msg</p>
         </div>
-        <div class="form">
+        <form class="form">
             <h1 class="heading">Login</h1>
             <input id="uname" type="text" autocomplete="off" class="uname" placeholder="Enter Username" required/>
             <input id="psw" type="password" autocomplete="off" class="password" placeholder="Enter Password" required/>
             <button class="submit-btn" type="submit" onclick="doLogin(event)">Login</button>
             <a href="./register.html" class="link">Create an account</a>
-        </div>
+        </form>
         <script src="./src/service-helpers.js"></script>
         <script src="./src/auth.service.js"></script>
+        <script src="./src/app.js"></script>
         <script src="./src/form.js"></script>
     </body>
 </html>

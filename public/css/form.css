@@ -25,7 +25,7 @@ body {
 }
 
 .heading {
-    opacity: 0;
+    /* opacity: 0; */
     text-transform: capitalize;
     text-align: center;
     font-size: 80px;
@@ -34,7 +34,7 @@ body {
 }
 
 input, .submit-btn {
-    opacity: 0;
+    /* opacity: 0; */
     width: 80%;
     height: 35px;
     display: block;
@@ -45,7 +45,7 @@ input, .submit-btn {
     color: black;
     padding: 15px;
     transition: .5s;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 input::placeholder {
@@ -66,11 +66,11 @@ input:focus::placeholder {
     padding: 0 20px;
     cursor: pointer;
     margin: 50px auto 0;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .link {
-    opacity: 0;
+    /* opacity: 0; */
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;

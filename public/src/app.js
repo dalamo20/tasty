@@ -1,14 +1,3 @@
-$(document).ready(function () {
-  $(".flickity-gallery").flickity({
-    // options
-    autoPlay: true,
-    cellAlign: "left",
-    contain: true,
-    freeScroll: true,
-    wrapAround: true,
-  });
-});
-
 // AUTH
 const doLogin = function (e) {
   e.preventDefault();
@@ -34,7 +23,7 @@ const doRegister = function (e) {
     email: email,
     password: password,
   }).then(function (res) {
-    window.location.href = "home.html";
+    window.location.href = "login.html";
   });
 };
 
@@ -42,3 +31,14 @@ const doLogout = function (e) {
   e.preventDefault();
 };
 // END OF AUTH
+
+$(document).ready(function () {
+  $(".flickity-gallery").flickity({
+    // options
+    autoPlay: true,
+    cellAlign: "left",
+    contain: true,
+    freeScroll: true,
+    wrapAround: true,
+  });
+});

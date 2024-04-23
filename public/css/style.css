@@ -7,10 +7,32 @@
  
   body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff;
     color: #333;
   }
+
+  .title {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: normal;
+    height: 56px; 
+    width: 755px;
+    margin-top: 70px;
+  }
   
+  .underline {
+    content: '';
+    display: block;
+    width: 93%; 
+    height: 1px;
+    background-color: black; 
+    margin: 0 auto; 
+    margin-top: 5px; 
+  }
+
   /* NAVBAR */
   nav {
     display: flex;
@@ -156,91 +178,282 @@
     cursor: pointer;
   }
   
+  /* COOKING REELS SECTION */
   .cooking-reels {
     background-color: #fff;
     padding: 20px;
   }
-  
-  .cooking-videos {
-    background-color: #fff;
-    padding: 20px;
+
+  .gallery-cell {
+    width: 38%;
   }
   
+  /* COOKING VIDEOS SECTION */
+  .cooking-videos {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .videos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .video {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 calc(50% - 20px);
+      margin-bottom: 20px;
+  }
+
+  .video iframe {
+      max-width: 100%;
+  }
+
+  .centered-button {
+      display: inline-flex;
+      gap: 15px;
+      align-items: center;
+      margin-top: 20px;
+      border: 1px solid;
+      padding: 20px 35px;
+      letter-spacing: 0;
+      line-height: normal;
+      border-radius: 40px;
+      font-weight: 400;
+      font-size: 18px;
+      height: 18px;
+      color: #000000;
+  }
+
+  /* RECIPES SECTION */
   .recipes {
     background-color: #fff;
     padding: 20px;
-  }
-  
-  .big-hero {
-    background-color: #253D29;
-    padding: 100px;
-  }
-  /* RECIPES */
-  .gallery {
-    background: #EEE;
-  }
-  
-  .gallery-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-  }
-  
-  /* cell number */
-  .gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
+    position: relative;
+    margin-bottom: 20px;
   }
 
-  /* FOOTER */
-  footer {
+  .recipe-container {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+  }
+
+  .recipe-card {
+    display: flex;
+  }
+  .recipes-categories {
+    background-color: #fff;
+  }
+
+  .recipe-thumb {
+    height: 562px;
+    width: 755px;
+  }
+
+  .recipe-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-color: #FFFCF4;
-    color: black;
-    padding: 20px;
-    bottom: 0;
+    width: 557px;
+    padding-left: 62px;
+  }
+
+  .recipe-name {
+    height: 123px;
+    width: 379px;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .recipe-short-description {
+    height: 72px;
+    width: 387px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .cardBtn {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 100px;
+    width: 185px;
+    padding: 23px 27px;
+    gap: 17px;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .pre-btn, .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 8;
+  }
+
+  .pre-btn {
     left: 0;
-    width: 100%;
+    /* transform: rotate(180deg); */
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+  /* RECIPE CATEGORIES */
+  .recipes-categories {
+    background-color: #fff;
+  }
+
+  .category-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding-left: 20px;
+  }
+
+  .category-item {
+    width: calc(50% - 20px);
+    height: 34px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: 0;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
   }
-  
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    flex: 1;
+
+  .category-item h3 {
+    margin-right: 10px;
+    text-wrap: nowrap;
   }
-  
-  .footer-center {
+
+  .recCatSpan {
+    padding-left: 387px;
+  }
+
+  /* NEWSLETTER */
+  .newsletter {
+    background-color: #253D29;
+    padding: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsText {
+    width: 589px;
+    height: 76px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 27px;
+    padding-top: 15px;
+  }
+
+  .newsBtn {
+    width: 223px;
+    height: 75px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2e2e2e;
+    background-color: #e7f974;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .bigNews {
+    width: 935px;
+    height: 73px;
+    font-weight: 400;
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: normal;
   }
   
-  .footer-row {
+  /* FOOTER */
+  footer {
+    display: flex;
+    background-color: #FFFCF4;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 103px;
+  }
+
+  .logo-footer {
+    width: 200px;
+    height: 33px;
+    color: #2e2e2e;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: normal;
+  }
+
+  .footer-leftCenter, .footer-rightCenter {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: normal;
   }
   
-  .footer-row a {
-    margin-bottom: 10px;
-    /* color: #fff; */
+  .footer-leftCenter > a, .footer-rightCenter > a {
     text-decoration: none;
+    color: #000000;
   }
   
   .footer-right p {
     margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: normal;
   }
   
   .footer-right a {
     margin-right: 10px;
-    /* color: #fff; */
     text-decoration: none;
-  }
-  
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: normal;
+  } 

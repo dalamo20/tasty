@@ -42,6 +42,7 @@ build/Release
 node_modules/
 jspm_packages/
 
+api-secrets.js
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 

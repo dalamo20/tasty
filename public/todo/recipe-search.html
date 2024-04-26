@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Saved Recipes</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar-left">
+        <a href="/">Home</a>
+        <a href="#">Videos</a>
+        <a href="./todo/recipe-search.html">Recipes</a>
+        <a href="#">Collection</a>
+      </div>
+      <div class="navbar-center">
+        <span class="logo">tasty!</span>
+      </div>
+      <div class="navbar-right">
+        <a href="./todo/recipe-search.html">
+            <span id="search" class="material-symbols-outlined" style="transform: translateY(5px);">
+            search
+            </span>
+        </a>
+        <a href="./login.html">Login</a>
+      </div>
+    </nav>
+    <form id="searchForm" class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </header>
+  <div class="recipeContainer">
+      
+  </div>
+  <script src="./recipe-search.service.js" type="module"></script>
+</body>
+</html>

@@ -17,6 +17,7 @@
                 <a href="#">Videos</a>
                 <a href="./todo/recipe-search.html">Recipes</a>
                 <a href="#">Collection</a>
+                <a href="./todo/profile.html">Profile</a>
               </div>
               <div class="navbar-center">
                 <span class="logo">tasty!</span>
@@ -27,7 +28,8 @@
                     search
                     </span>
                 </a>
-                <a href="./login.html">Login</a>
+                <a id="login" href="./login.html">Login</a>
+                <a id="logout" style="display: none;" href="/">Logout</a>        
               </div>
             </nav>
           </header>
@@ -252,6 +254,8 @@
               <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
             </div>
           </footer>
-        <script src="./src/app.js"></script>
+          <script src="./src/auth.service.js"></script>
+          <script src="./src/auth.js" type="module"></script>
+          <script src="./src/app.js" type="module"></script>
     </body>
 </html>

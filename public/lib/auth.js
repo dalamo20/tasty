@@ -15,7 +15,7 @@ const doLogin = async (e) => {
     setStorage("refresh_token", refresh_token);
 
     if (res) {
-      window.location.href = "todo/home.html";
+      window.location.href = "/";
     }
   } catch (err) {
     alert("Failed to login. Please try again later.");

@@ -30,3 +30,14 @@ tasty! is not just another boring culinary website. tasty! is here to engage aud
 - **Security**: JWT (Json Web Tokens) & Bcrypt for authentication and password hashing/encryption
 - **Middleware**: cors, body-parser, morgan
 - **Dev Tools**: Postman
+
+## Getting Started
+
+- **Clone Backend Server**: Clone the backend server located at https://github.com/dalamo20/tasty-api.
+- **Create Database**: The backend service uses db called tastydb. Do a 'CREATE DATABASE tastydb;'. Make sure to then execute 'use tastydb;'.
+- **Start Backend Server**: By executing 'npm start' in the terminal, the user table will be created. Port listens at 3000. (Ex: http://localhost:3000).
+- **Clone Frontend**: Clone the tasty repository.
+- **Start Frontend**: In terminal, 'npm start'. Port listens at 4000. (Ex: http://localhost:4000).
+- **Login**: Try the login/registration features by clicking the 'Login' in the nav.
+- **API**: Try the recipe api by clicking the 'Recipes' in the nav. Test out the filters. (Warning: 10 api reqs/minute).
+- **Profile**: Take a glance at the future user profile page by clicking the 'Profile' nav link.

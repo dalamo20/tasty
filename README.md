@@ -34,6 +34,7 @@ tasty! is not just another boring culinary website. tasty! is here to engage aud
 ## Getting Started
 
 - **Clone Backend Server**: Clone the backend server located at https://github.com/dalamo20/tasty-api.
+- **Setup**: Cd into the repo and 'npm install' to get all the dependencies.
 - **Create Database**: The backend service uses db called tastydb. Do a 'CREATE DATABASE tastydb;'. Make sure to then execute 'use tastydb;'.
 - **Start Backend Server**: By executing 'npm start' in the terminal, the user table will be created. Port listens at 3000. (Ex: http://localhost:3000).
 - **Clone Frontend**: Clone the tasty repository.

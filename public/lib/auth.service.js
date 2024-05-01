@@ -1,5 +1,5 @@
 const AUTH_API = `${BASE_API_URL}/auth`; // http://localhost:3000/api/auth
-const USER_API = `${BASE_API_URL}/user`; // http://localhost:3000/api/user
+// const USER_API = `${BASE_API_URL}/user`; // http://localhost:3000/api/user
 
 /**
  * @class AuthService
@@ -49,8 +49,12 @@ class AuthService {
    * Logs the user out of the current session.
    */
   logout = () => {
-    localStorage.clear();
-    window.location.href = "/";
+    try {
+      localStorage.clear();
+      window.location.href = "/";
+    } catch (error) {
+      console.error("Error occurred during logout:", error);
+    }
   };
 }
 

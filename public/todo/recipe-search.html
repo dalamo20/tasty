@@ -22,12 +22,13 @@
         <span class="logo">tasty!</span>
       </div>
       <div class="navbar-right">
-        <a href="./todo/recipe-search.html">
+        <a href="./recipe-search.html">
             <span id="search" class="material-symbols-outlined" style="transform: translateY(5px);">
             search
             </span>
         </a>
-        <a href="./login.html">Login</a>
+        <a id="login" href="./login.html">Login</a>
+        <a id="logout" style="display: none;" href="/" onclick="doLogout(event)">Logout</a>        
       </div>
     </nav>
     <form id="searchForm" class="form-inline">
@@ -49,6 +50,13 @@
   <div class="recipeContainer">
       
   </div>
+  <script src="../lib/api.config.js"></script>
+  <script src="../lib/simple-storage.js"></script>
+  <script src="../lib/service-helpers.js"></script>
+  <script src="../lib/auth.service.js"></script>
+  <script src="../lib/auth.js"></script>
+  <script src="../lib/auth.guard.js"></script>
   <script src="./recipe-search.service.js" type="module"></script>
+  <script src="../lib/app.js"></script>
 </body>
 </html>

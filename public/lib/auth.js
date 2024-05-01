@@ -6,6 +6,7 @@ const doLogin = async (e) => {
 
   try {
     const res = await authService.login({ username, password });
+
     const { auth, expires_in, access_token, refresh_token } = res;
     const expiryDate = authService.setExpiration(expires_in);
 

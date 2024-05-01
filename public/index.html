@@ -29,7 +29,7 @@
                     </span>
                 </a>
                 <a id="login" href="./login.html">Login</a>
-                <a id="logout" style="display: none;" href="/">Logout</a>        
+                <a id="logout" style="display: none;" href="/" onclick="doLogout(event)">Logout</a>        
               </div>
             </nav>
           </header>
@@ -254,8 +254,11 @@
               <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
             </div>
           </footer>
-          <script src="./src/auth.service.js"></script>
-          <script src="./src/auth.js" type="module"></script>
-          <script src="./src/app.js" type="module"></script>
+          <script src="./lib/api.config.js"></script>
+          <script src="./lib/simple-storage.js"></script>
+          <script src="./lib/service-helpers.js"></script>
+          <script src="./lib/auth.service.js"></script>
+          <script src="./lib/auth.js"></script>
+          <script src="./lib/app.js"></script>
     </body>
 </html>
